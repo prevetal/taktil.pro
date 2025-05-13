@@ -70,6 +70,12 @@
     }
 
 
+    header .logo
+    {
+        bottom: 20px;
+    }
+
+
     header .logo img
     {
         width: 147px;
@@ -116,6 +122,7 @@
     {
         font-size: 14px;
 
+        min-height: 30px;
         margin-left: 88px;
 
         gap: 15px;

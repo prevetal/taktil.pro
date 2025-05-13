@@ -531,6 +531,59 @@ button
 
 
 
+/*-------------
+    Animate
+-------------*/
+.animate
+{
+    transition: .3s linear;
+    transition-property: opacity, transform;
+
+    opacity: 0;
+}
+
+
+.animate.fadeUp
+{
+    transform: translateY(50%);
+}
+
+.animate.fadeLeft
+{
+    transform: translateX(-50%);
+}
+
+.animate.fadeRight
+{
+    transform: translateX(50%);
+}
+
+
+.animate.delay
+{
+    transition-delay: .2s;
+}
+
+.animate.delay2
+{
+    transition-delay: .4s;
+}
+
+.animate.delay3
+{
+    transition-delay: .6s;
+}
+
+
+.animate.animated
+{
+    transform: none;
+
+    opacity: 1;
+}
+
+
+
 /*------------
     Header
 ------------*/
@@ -550,8 +603,8 @@ header
 
 header .cont
 {
-    align-content: center;
-    align-items: center;
+    align-content: flex-end;
+    align-items: flex-end;
     justify-content: space-between;
 }
 
@@ -560,12 +613,12 @@ header .cont
 header .logo
 {
     position: absolute;
-    top: 50%;
+    bottom: 30px;
     left: 50%;
 
     display: block;
 
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     text-decoration: none;
 
     color: currentColor;
@@ -795,6 +848,7 @@ header .links
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    min-height: 40px;
     margin-right: auto;
     margin-left: 133px;
 
@@ -5612,7 +5666,7 @@ footer .cont
     align-items: stretch;
     justify-content: space-between;
 
-    gap: 10px;
+    gap: 20px;
 }
 
 

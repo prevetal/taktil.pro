@@ -22,7 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
 				nextEl: '.swiper-button-next',
 				prevEl: '.swiper-button-prev'
 			},
-			lazy: true
+			lazy: true,
+			autoplay: {
+				delay: 3000,
+				disableOnInteraction: false
+			}
 		})
 	}
 
@@ -304,4 +308,24 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('.filter').removeClass('show')
 		$('.overlay').fadeOut(300)
 	})
+
+
+	// Animation
+	const animationBoxes = document.querySelectorAll('.animate')
+
+	function scrollTracking(entries) {
+		for (const entry of entries) {
+			if (entry.target.classList.contains('animate')) {
+				if (entry.intersectionRatio >= 0.2 && !entry.target.classList.contains('animated')) {
+					entry.target.classList.add('animated')
+				}
+			}
+		}
+	}
+
+	const animationObserver = new IntersectionObserver(scrollTracking, {
+		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+	})
+
+	animationBoxes.forEach(element => animationObserver.observe(element))
 })
