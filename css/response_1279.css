@@ -1118,6 +1118,15 @@
     }
 
 
+    .contacts_info .item.big .label.small
+    {
+        font-size: 24px;
+
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+
     .contacts_info .item .val
     {
         font-size: 20px;
@@ -1131,6 +1140,12 @@
     {
         height: 408px;
         margin: 38px calc(var(--cont_padding) * -1) 0;
+    }
+
+
+    .contacts_info .exp
+    {
+        font-size: 20px;
     }
 
 
@@ -1468,6 +1483,54 @@
     .checkout_success .link a:before
     {
         width: 30px;
+    }
+
+
+
+    /*-------------------
+        Delivery info
+    -------------------*/
+    .delivery_info .data
+    {
+        gap: 50px 20px;
+    }
+
+
+    .delivery_info .item
+    {
+        width: 100%;
+    }
+
+
+    .delivery_info .item .name
+    {
+        font-size: 20px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .delivery_info .item .desc
+    {
+        font-size: 16px;
+    }
+
+
+    .delivery_info .item .items
+    {
+        font-size: 18px;
+
+        width: 440px;
+        margin-top: 40px;
+
+        gap: 40px;
+    }
+
+
+    .delivery_info .item .items > *
+    {
+        min-height: 0;
+        padding-left: 136px;
     }
 
 

@@ -4683,6 +4683,18 @@ g
 }
 
 
+.contacts_info .item.big .label.small
+{
+    font-family: var(--font_family2);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+
+    width: calc(50% - 10px);
+    padding-bottom: 43px;
+}
+
+
 .contacts_info .item .row
 {
     display: flex;
@@ -4781,6 +4793,20 @@ g
     margin: 30px calc((100vw - 1600px - var(--scroll_width)) / -2) 0;
 
     background: #ddd;
+}
+
+
+.contacts_info .exp
+{
+    font-family: var(--font_family2);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+
+    width: calc(50% - 10px);
+    margin-left: auto;
+
+    color: rgba(43, 43, 43, .70);
 }
 
 
@@ -5642,6 +5668,134 @@ g
 .checkout_success .link a:hover:before
 {
     width: 100%;
+}
+
+
+
+/*-------------------
+    Delivery info
+-------------------*/
+.delivery_info
+{
+    padding-top: 40px;
+}
+
+
+.delivery_info .data
+{
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    gap: 80px 20px;
+}
+
+
+.delivery_info .item
+{
+    width: calc(50% - 10px);
+}
+
+
+.delivery_info .item .name
+{
+    font-family: var(--font_family2);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 120%;
+
+    margin-bottom: 50px;
+}
+
+
+.delivery_info .item .desc
+{
+    font-size: 24px;
+    line-height: 120%;
+
+    position: relative;
+
+    display: flex;
+
+    padding-top: 19px;
+
+    color: rgba(43, 43, 43, .70);
+    border-top: 1px solid rgba(43, 43, 43, .30);
+}
+
+
+.delivery_info .item .desc span
+{
+    display: block;
+
+    width: 594px;
+    max-width: 100%;
+}
+
+
+.delivery_info .item .desc.border:before
+{
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+
+    display: block;
+
+    width: 1px;
+    height: calc(100% + 1px);
+
+    content: '';
+    pointer-events: none;
+
+    background: rgba(43, 43, 43, .30);
+}
+
+
+.delivery_info .item .items
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 120%;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 594px;
+    max-width: 100%;
+    margin-top: 57px;
+
+    counter-reset: number;
+
+    gap: 80px;
+}
+
+
+.delivery_info .item .items > *
+{
+    position: relative;
+
+    min-height: 72px;
+    padding-left: 205px;
+}
+
+
+.delivery_info .item .items > *:before
+{
+    font-family: var(--font_family2);
+    font-size: var(--font_size_title_middle);
+    font-weight: 500;
+    line-height: 110%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: counter(number, decimal-leading-zero);
+    counter-increment: number;
+
+    color: var(--accent_color);
 }
 
 
