@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			},
 			lazy: true,
 			autoplay: {
-				delay: 3000,
+				delay: 7000,
 				disableOnInteraction: false
 			}
 		})
@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', function() {
 	}
 
 
-	$('.product_info .buy_btn').click(function(e) {
+	/*$('.product_info .buy_btn').click(function(e) {
 		$(this).hide()
 
 		$('.product_info .amount').addClass('show')
-	})
+	})*/
 
 
 	// Reviews slider
@@ -173,6 +173,17 @@ document.addEventListener('DOMContentLoaded', function() {
 		$('body').toggleClass('lock')
 		$('.mob_menu').toggleClass('show')
 	})
+
+	if(window.innerWidth<639){
+		$(".js-menu-footer").click((e) => {
+			e.preventDefault()
+
+			$('.mob_header .menu_btn').toggleClass('active')
+			$('body').toggleClass('lock')
+			$('.mob_menu').toggleClass('show')
+		})
+	}
+	
 
 
 	// Phone input mask

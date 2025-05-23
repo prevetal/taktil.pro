@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
 
-    scroll-margin-top: 24px;
+    scroll-margin-top: 100px;
 }
 
 *:before,
@@ -564,6 +564,11 @@ button
     transition-delay: .2s;
 }
 
+.animate.delay1
+{
+    transition-delay: .2s;
+}
+
 .animate.delay2
 {
     transition-delay: .4s;
@@ -924,12 +929,18 @@ header .contacts a
     flex-wrap: wrap;
     justify-content: flex-start;
 
+    transition: color .2s linear;
     white-space: nowrap;
     text-decoration: none;
 
     color: currentColor;
 
     gap: 6px;
+}
+
+header .contacts a:hover
+{
+    color: var(--accent_color);
 }
 
 
@@ -1054,7 +1065,30 @@ header .cart_link a:hover
 {
     color: var(--accent_color);
 }
+.cart_link
+{
+    position: relative;
+}
+.cart_link .number
+{
+    font-size: 12px;
+    line-height: 18px;
 
+    position: absolute;
+    top: -6px;
+    right: -6px;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+
+    border: 2px solid #000;
+    border-radius: 50%;
+    background: #fff;
+}
 
 
 /*-----------------
@@ -1924,12 +1958,23 @@ aside
 
 .filter .form .submit
 {
+    position: sticky;
+    bottom: 0;
+
+/*display: flex;
+    flex-direction: column;
+    padding-top: 77px;
+    border-top: 1px solid rgba(43, 43, 43, .30);
+
+    gap: 20px;*/
+
     display: flex;
     flex-direction: column;
 
-    padding-top: 77px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
-    border-top: 1px solid rgba(43, 43, 43, .30);
+    background: #fff;
 
     gap: 20px;
 }
@@ -3459,9 +3504,15 @@ g
 
     padding: 12px 20px 12px 0;
 
+    transition: color .2s linear;
     text-decoration: none;
 
     color: currentColor;
+}
+
+.contacts_block .links a:hover
+{
+    color: var(--accent_color);
 }
 
 
@@ -3709,7 +3760,8 @@ g
 }
 
 
-.categories_slider .category.active
+.categories_slider .category.active,
+.categories_slider .category:hover
 {
     font-weight: 600;
 }
@@ -6005,9 +6057,14 @@ footer .contacts .item .icon + div
 
 footer .contacts .item a
 {
+    transition: color .2s linear;
     text-decoration: none;
 
     color: currentColor;
+}
+footer .contacts .item a:hover
+{
+    color: #fff;
 }
 
 

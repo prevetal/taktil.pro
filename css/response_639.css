@@ -12,6 +12,10 @@
         --font_size_title_middle: 22px;
     }
 
+    *{
+        scroll-margin-top: 50px;
+    }
+
 
 
     .content_flex .content

@@ -36,7 +36,7 @@
 		<link rel="stylesheet" href="css/styles.css">
 
 		<link rel="stylesheet" href="css/response_1899.css" media="print, (max-width: 1899px)">
-		<link rel="stylesheet" href="css/response_1279.css" media="print, (max-width: 1279px)">
+		<link rel="stylesheet" href="css/response_1379.css" media="print, (max-width: 1379px)">
 		<link rel="stylesheet" href="css/response_639.css" media="print, (max-width: 639px)">
 	</head>
 
@@ -519,159 +519,260 @@
 
 				<section class="page_head">
 					<div class="cont">
-						<h1 class="page_title middle">Моя корзина</h1>
+						<h1 class="page_title middle">Оформление заказа</h1>
 					</div>
 				</section>
 
 
-				<section class="cart_info block">
-					<div class="cont">
-						<button class="clear_btn">Очистить<span> корзину</span></button>
+				<section class="checkout_info block">
+					<div class="cont row">
+						<div class="data">
+							<form action="" class="form">
+								<div class="section">
+									<div class="title mob_big">Покупатель</div>
 
-						<div class="items">
-							<div class="product">
-								<a href="/" class="thumb">
-									<picture class="image">
-										<img src="images/tmp/cart_product_thumb.png" alt="" loading="lazy">
-									</picture>
-								</a>
+									<div class="line type">
+										<div class="field">
+											<label class="checkbox">
+												<input type="radio" name="type">
 
-								<div class="info">
-									<div class="name">
-										<a href="/">Тактильная плитка</a>
-									</div>
+												<div class="check"></div>
 
-									<div class="features">
-										<div>Цвет: чёрный</div>
-										<div>Размер: 210 мм</div>
-										<div>Форма: квадрат</div>
-									</div>
-								</div>
+												<div>Физическое лицо</div>
+											</label>
+										</div>
 
-								<div class="price">
-									<div class="val">182 ₽</div>
+										<div class="field">
+											<label class="checkbox">
+												<input type="radio" name="type">
 
-									<div class="unit">за 1 шт.</div>
-								</div>
+												<div class="check"></div>
 
-								<div class="amount">
-									<button type="button" class="btn minus">-</button>
-
-									<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
-
-									<button type="button" class="btn plus">+</button>
-								</div>
-
-								<div class="price total">
-									<div class="val">182 ₽</div>
-								</div>
-
-								<div class="delete">
-									<button class="btn">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-									</button>
-								</div>
-							</div>
-
-							<div class="product">
-								<a href="/" class="thumb">
-									<picture class="image">
-										<img src="images/tmp/cart_product_thumb2.png" alt="" loading="lazy">
-									</picture>
-								</a>
-
-								<div class="info">
-									<div class="name">
-										<a href="/">Мнемосхема для санузла</a>
-									</div>
-
-									<div class="features">
-										<div>Цвет: чёрный</div>
-										<div>Размер: 210 мм</div>
-										<div>Форма: квадрат</div>
+												<div>Юридическое лицо</div>
+											</label>
+										</div>
 									</div>
 								</div>
 
-								<div class="price">
-									<div class="val">3 700 ₽</div>
+								<div class="section">
+									<div class="title mob_big">Личная информация</div>
 
-									<div class="unit">за 1 шт.</div>
-								</div>
+									<div class="columns">
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Ваше имя *">
+											</div>
+										</div>
 
-								<div class="amount">
-									<button type="button" class="btn minus">-</button>
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Ваша фамилия *">
+											</div>
+										</div>
 
-									<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+										<div class="line">
+											<div class="field">
+												<input type="email" name="" value="" class="input" placeholder="Email *">
+											</div>
+										</div>
 
-									<button type="button" class="btn plus">+</button>
-								</div>
-
-								<div class="price total">
-									<div class="val">3 700 ₽</div>
-								</div>
-
-								<div class="delete">
-									<button class="btn">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-									</button>
-								</div>
-							</div>
-
-							<div class="product">
-								<a href="/" class="thumb">
-									<picture class="image">
-										<img src="images/tmp/cart_product_thumb3.png" alt="" loading="lazy">
-									</picture>
-								</a>
-
-								<div class="info">
-									<div class="name">
-										<a href="/">Противоскользящая накладка для ступеней без клеевого слоя</a>
-									</div>
-
-									<div class="features">
-										<div>Цвет: чёрный</div>
-										<div>Размер: 210 мм</div>
-										<div>Форма: квадрат</div>
+										<div class="line">
+											<div class="field">
+												<input type="tel" name="" value="" class="input" placeholder="Номер телефона *">
+											</div>
+										</div>
 									</div>
 								</div>
 
-								<div class="price">
-									<div class="val">2 275 ₽</div>
+								<div class="section">
+									<div class="title mob_big">Адрес</div>
 
-									<div class="unit">за 1 шт.</div>
+									<div class="columns">
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Город">
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Улица">
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Дом">
+											</div>
+										</div>
+
+										<div class="line">
+											<div class="field">
+												<input type="text" name="" value="" class="input" placeholder="Квартира/офис">
+											</div>
+										</div>
+									</div>
 								</div>
 
-								<div class="amount">
-									<button type="button" class="btn minus">-</button>
+								<div class="cols">
+									<div class="section">
+										<div class="title">Выбор доставки</div>
 
-									<input type="text" value="1" class="input" data-minimum="1" data-maximum="99" data-step="1" data-unit="" maxlength="2">
+										<div class="line">
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="delivery_method">
 
-									<button type="button" class="btn plus">+</button>
+													<div class="check"></div>
+
+													<div>Самовывоз</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="delivery_method">
+
+													<div class="check"></div>
+
+													<div>Транспортная компания</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="delivery_method">
+
+													<div class="check"></div>
+
+													<div>Пункт выдачи</div>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="section">
+										<div class="title">Выбор оплаты</div>
+
+										<div class="line">
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="payment_method">
+
+													<div class="check"></div>
+
+													<div>По счёту</div>
+												</label>
+											</div>
+
+											<div class="field">
+												<label class="checkbox">
+													<input type="checkbox" name="payment_method">
+
+													<div class="check"></div>
+
+													<div>По QR-коду</div>
+												</label>
+											</div>
+										</div>
+									</div>
 								</div>
 
-								<div class="price total">
-									<div class="val">2 275 ₽</div>
+								<div class="submit">
+									<button type="submit" class="submit_btn">Оформить заказ</button>
 								</div>
 
-								<div class="delete">
-									<button class="btn">
-										<svg class="icon"><use xlink:href="images/sprite.svg#ic_delete"></use></svg>
-									</button>
+								<div class="agree">
+									<label class="checkbox">
+										<input type="checkbox" name="agree">
+
+										<div class="check"></div>
+
+										<div>Я соглашаюсь на <a href="/" target="_blank">обработку персональных данных</a></div>
+									</label>
 								</div>
-							</div>
+							</form>
 						</div>
 
-						<div class="bottom">
+
+						<div class="order">
+							<div class="title">Мой заказ</div>
+
+							<div class="items">
+								<div class="product">
+									<a href="/" class="thumb">
+										<picture class="image">
+											<img src="images/tmp/checkout_product_thumb.png" alt="" loading="lazy">
+										</picture>
+									</a>
+
+									<div class="info">
+										<div class="name">
+											<a href="/">Тактильная плитка</a>
+										</div>
+
+										<div class="features">
+											<div>Цвет: чёрный</div>
+											<div>Размер: 210 мм</div>
+											<div>Форма: квадрат</div>
+										</div>
+									</div>
+
+									<div class="amount">3 шт.</div>
+
+									<div class="price">3 700 ₽</div>
+								</div>
+
+								<div class="product">
+									<a href="/" class="thumb">
+										<picture class="image">
+											<img src="images/tmp/checkout_product_thumb2.png" alt="" loading="lazy">
+										</picture>
+									</a>
+
+									<div class="info">
+										<div class="name">
+											<a href="/">Противоскользящая накладка для ступеней без клеевого слоя</a>
+										</div>
+
+										<div class="features">
+											<div>Цвет: чёрный</div>
+											<div>Размер: 210 мм</div>
+											<div>Форма: квадрат</div>
+										</div>
+									</div>
+
+									<div class="amount">3 шт.</div>
+
+									<div class="price">567 ₽</div>
+								</div>
+
+								<div class="product">
+									<a href="/" class="thumb">
+										<picture class="image">
+											<img src="images/tmp/checkout_product_thumb3.png" alt="" loading="lazy">
+										</picture>
+									</a>
+
+									<div class="info">
+										<div class="name">
+											<a href="/">Тактильная плитка</a>
+										</div>
+
+										<div class="features">
+											<div>Цвет: чёрный</div>
+											<div>Размер: 210 мм</div>
+											<div>Форма: квадрат</div>
+										</div>
+									</div>
+
+									<div class="amount">2 шт.</div>
+
+									<div class="price">2 275 ₽</div>
+								</div>
+							</div>
+
 							<div class="total_price">Итоговая цена: 6 876 ₽</div>
-
-							<div class="back_link">
-								<a href="/" class="link">Вернуться к покупкам</a>
-							</div>
-
-							<div class="checkout_link">
-								<a href="/" class="link">Оформить заказ</a>
-							</div>
 						</div>
 					</div>
 				</section>
